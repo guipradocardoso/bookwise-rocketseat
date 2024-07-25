@@ -46,7 +46,7 @@ export function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <div className="flex flex-col pt-10 pb-6 items-center justify-between  min-w-56 h-[988px] rounded-lg bg-gradient-to-b from-green-200 via-purple-200 to-gray-800">
+    <div className="flex flex-col pt-10 pb-6 items-center justify-between min-w-56 min-h-screen max-h-[988px] rounded-lg bg-gradient-to-b from-green-200 via-purple-200 to-gray-800">
       <div className="flex flex-col gap-16">
         <Image
           src="/logo-bookwise.png"
@@ -76,22 +76,24 @@ export function Sidebar() {
       )}
 
       {isAuthenticated && (
-        <Link href="/perfil">
-          <div className="flex flex-row gap-3 items-center justify-center">
-            <Image
-              src="https://github.com/guipradocardoso.png"
-              width={32}
-              height={32}
-              alt=""
-              quality={100}
-              className="rounded-full"
-            />
-            <p className="text-gray-200 text-sm">Guilherme</p>
-            <Link href="/login">
-              <SignOut size={20} className="text-red-500 p-1" weight="fill" />
-            </Link>
-          </div>
-        </Link>
+        <div className="flex items-center justify-center gap-3">
+          <Link href="/perfil">
+            <div className="flex flex-row gap-3 items-center justify-center">
+              <Image
+                src="https://github.com/guipradocardoso.png"
+                width={32}
+                height={32}
+                alt=""
+                quality={100}
+                className="rounded-full"
+              />
+              <p className="text-gray-200 text-sm">Guilherme</p>
+            </div>
+          </Link>
+          <Link href="/login">
+            <SignOut size={20} className="text-red-500 p-1" weight="fill" />
+          </Link>
+        </div>
       )}
     </div>
   )

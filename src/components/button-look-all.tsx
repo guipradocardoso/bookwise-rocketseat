@@ -1,5 +1,6 @@
 'use client'
 import { CaretRight } from 'phosphor-react'
+import { CardLastBook } from './card-last-book'
 
 export function ButtonLookAll() {
   return (
@@ -20,7 +21,7 @@ export function ButtonLookAll() {
 
       <div className="flex flex-col mt-16">
         <h2>Livros populares</h2>
-        <CardBook />
+        <CardLastBook />
       </div>
     </div>
   )
