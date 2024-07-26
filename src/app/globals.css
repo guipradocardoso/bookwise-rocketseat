@@ -10,6 +10,14 @@
    text-overflow: ellipsis;
  }
 
+.truncate-multiline-four {
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* Número de linhas a serem exibidas antes do truncamento */
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+
 html, body {
    padding: 0;
    margin: 0;
