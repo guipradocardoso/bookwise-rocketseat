@@ -46,7 +46,7 @@ export function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <div className="flex flex-col pt-10 pb-6 items-center justify-between min-w-56 min-h-screen max-h-[988px] rounded-lg bg-gradient-to-b from-green-200 via-purple-200 to-gray-800">
+    <div className="flex flex-col pt-10 pb-6 items-center justify-between min-w-56 min-h-[700px] max-h-[988px] rounded-lg bg-gradient-to-b from-green-200 via-purple-200 to-gray-800">
       <div className="flex flex-col gap-16">
         <Image
           src="/logo-bookwise.png"

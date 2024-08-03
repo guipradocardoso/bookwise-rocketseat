@@ -33,8 +33,8 @@ export function CardLastBook() {
             <h1>Entendendo Algoritmos</h1>
             <span>Aditya Bhargava</span>
           </div>
-          <div className="flex md:max-h-11 truncate-multiline">
-            <p>
+          <div className="flex md:max-h-11">
+            <p className=" line-clamp-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatibus assumenda harum nostrum deleniti. Cumque modi,
               accusantium officia nisi placeat totam aliquam, neque laboriosam

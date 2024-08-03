@@ -2,21 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.truncate-multiline {
-   display: -webkit-box;
-   -webkit-line-clamp: 2; /* Número de linhas a serem exibidas antes do truncamento */
-   -webkit-box-orient: vertical;
-   overflow: hidden;
-   text-overflow: ellipsis;
- }
+::-webkit-scrollbar {
+  width: 12px;             /* width of the entire scrollbar */
+}
 
-.truncate-multiline-four {
-   display: -webkit-box;
-   -webkit-line-clamp: 4; /* Número de linhas a serem exibidas antes do truncamento */
-   -webkit-box-orient: vertical;
-   overflow: hidden;
-   text-overflow: ellipsis;
- }
+::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;    /* color of the scroll thumb */
+  border-radius: 4px;       /* roundness of the scroll thumb */
+  border: 2px solid white;  /* creates padding around scroll thumb */
+}
 
 html, body {
    padding: 0;

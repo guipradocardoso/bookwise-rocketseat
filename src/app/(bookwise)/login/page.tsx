@@ -21,7 +21,7 @@ const LoginButton = ({ href, src, alt, children }: LoginButtonProps) => {
 
 export default async function Login() {
   return (
-    <main className="flex flex-col sm:flex-row gap-56 items-center justify-center min-h-screen">
+    <main className="flex flex-col sm:flex-row gap-56 items-center justify-center max-w-full max-h-full min-h-screen p-5">
       <Image
         src="/login-image.png"
         alt=""
