@@ -1,15 +1,26 @@
 'use client'
 
-import { ChartLineUp } from 'phosphor-react'
+import { ChartLineUp, User } from 'phosphor-react'
+
+const icons = {
+  user: User,
+  chartlineup: ChartLineUp,
+}
+
+type IconName = keyof typeof icons
 
 interface HeaderProps {
   title: string
+  iconColor?: string
+  iconName: IconName
 }
 
-export function Header({ title }: HeaderProps) {
+export function Header({ title, iconName, iconColor }: HeaderProps) {
+  const IconComponent = icons[iconName]
+
   return (
     <div className="flex flex-row items-center justify-start gap-3">
-      <ChartLineUp size={32} className="text-green-100" />
+      <IconComponent size={32} className={iconColor} />
       <h2 className="text-2xl text-gray-100 ">{title}</h2>
     </div>
   )
